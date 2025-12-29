@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  height: auto;
+}
+
+.header-nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.4rem 1.5rem;
+  line-height: 1.2;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.logo-text {
+  background: linear-gradient(to right, #E5F3FF, #E5FFE5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.header-menu-desktop {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu-item {
+  color: #374151;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s;
+}
+
+.header-menu-item:hover {
+  color: #E5F3FF;
+}
+
+.about-me-btn {
+  background: linear-gradient(135deg, #E5FFE5 0%, #D4F4D4 100%);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  color: #2d5016;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(74, 124, 89, 0.2);
+}
+
+.about-me-btn:hover {
+  background: linear-gradient(135deg, #D4F4D4 0%, #C4E4C4 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 124, 89, 0.3);
+  color: #1f3d0f;
+}
+
+.header-menu-toggle {
+  display: block;
+  color: #374151;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.header-menu-mobile {
+  display: block;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header-menu-mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu-item-mobile {
+  color: #374151;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  transition: color 0.3s;
+}
+
+.header-menu-item-mobile:hover {
+  color: #E5F3FF;
+}
+
+@media (min-width: 768px) {
+  .header-menu-desktop {
+    display: flex;
+  }
+  
+  .header-menu-toggle {
+    display: none;
+  }
+  
+  .header-menu-mobile {
+    display: none;
+  }
+}
