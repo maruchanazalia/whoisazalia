@@ -4,9 +4,17 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
+      title: 'Front-end Web/Software Developer',
+      company: 'Trinity Industries, Inc.',
+      period: 'Feb 2026 - Actualidad',
+      location: 'El Marqués, Querétaro · Presencial',
+      description: 'Como Frontend Web Developer colaborando con Trinity, me enfoco en construir soluciones escalables y eficientes para visualizar e interactuar con datos. Uso frameworks modernos como React con TypeScript para crear interfaces responsivas, accesibles y de alto rendimiento, con experiencias fluidas en distintos dispositivos y navegadores. Trabajo con Palantir Foundry y su Developer Console para entregar sistemas front-end intuitivos y confiables que hacen que los datos complejos sean fáciles de explorar y entender.',
+      technologies: ['TypeScript', 'React.js', 'Palantir Foundry', 'Developer Console'],
+    },
+    {
       title: 'Desarrolladora Full Stack - Especialista en Aplicaciones Contables',
       company: 'ARXSOFTWARE',
-      period: 'Jul 2024 - Presente',
+      period: 'Jul 2024 - Ene 2026',
       location: 'Híbrido',
       description: 'Desarrollo aplicaciones contables especializadas utilizando C# .NET para backend y React para frontend. Implemento sistemas completos de gestión financiera con autenticación JWT y seguridad robusta. Diseño y desarrollo interfaces de usuario para aplicaciones móviles y web de sistemas contables. Realizo despliegue y mantenimiento de aplicaciones en Hostinger con arquitecturas escalables. Creo prototipos y mockups funcionales para aplicaciones financieras.',
       technologies: ['C#', '.NET', 'ASP.NET Core', 'Entity Framework', 'React', 'JWT', 'Hostinger', 'Blazor'],

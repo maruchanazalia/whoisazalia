@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { FaTimes, FaYoutube, FaDumbbell, FaRunning, FaMusic, FaPaintBrush, FaCamera } from 'react-icons/fa';
+import { FaTimes, FaYoutube, FaDumbbell, FaRunning, FaMusic, FaPaintBrush, FaCamera, FaBook, FaFilm } from 'react-icons/fa';
 import { personalData } from '../data/personalData';
 import cuerpoImage from '../assets/cuerpo.jpeg';
 import './AboutMeModal.css';
@@ -26,6 +26,8 @@ const AboutMeModal = ({ isOpen, onClose }) => {
     'Bailar': FaMusic,
     'Pintar en acuarelas': FaPaintBrush,
     'Fotografía': FaCamera,
+    'Leer': FaBook,
+    'Ver películas': FaFilm,
   };
 
   const modalContent = (
@@ -70,6 +72,24 @@ const AboutMeModal = ({ isOpen, onClose }) => {
             })}
           </div>
         </div>
+
+        {personalData.cosmos && (
+          <div className="about-me-section">
+            <h3 className="about-me-section-title">Lectura y Cosmos</h3>
+            <p className="about-me-description">
+              {personalData.cosmos.description}
+            </p>
+            <a
+              href={personalData.cosmos.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cosmos-link"
+            >
+              <span className="cosmos-link-mark">✶</span>
+              <span>Visitar mi Cosmos · {personalData.cosmos.handle}</span>
+            </a>
+          </div>
+        )}
 
         {personalData.youtube && (
           <div className="about-me-section">

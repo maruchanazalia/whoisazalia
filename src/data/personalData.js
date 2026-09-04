@@ -79,6 +79,11 @@ export const personalData = {
     'Leer',
     'Ver películas',
   ],
+  cosmos: {
+    url: 'https://www.cosmos.so/azaliaaparicio',
+    handle: '@azaliaaparicio',
+    description: 'Cultivo el hábito de la lectura y colecciono inspiración visual. En Cosmos guardo referencias, moodboards y todo lo que alimenta mi musa.',
+  },
   youtube: {
     channel: 'https://www.youtube.com/@azaliasFilms',
     description: "azalia's films, just for me, My dreams."
